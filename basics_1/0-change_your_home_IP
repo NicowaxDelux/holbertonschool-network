@@ -3,6 +3,7 @@
 #Requirements:
 #localhost resolves to 127.0.0.2
 #facebook.com resolves to 8.8.8.8.
+sudo cp /etc/hosts /etc/hosts.backup
 
 sudo sed -i '/localhost/c\127.0.0.2 localhost' /etc/hosts
 sudo sed -i '/facebook.com/d' /etc/hosts
